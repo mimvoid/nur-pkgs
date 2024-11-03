@@ -1,9 +1,10 @@
-{ stdenvNoCC,
+{
+  stdenvNoCC,
   lib,
   fetchurl,
   appimageTools,
   makeWrapper,
-  electron
+  electron,
 }:
 
 stdenvNoCC.mkDerivation rec {
@@ -16,9 +17,7 @@ stdenvNoCC.mkDerivation rec {
     hash = "sha256-Bf5IUjM1oX6gGlwXExAdsvEFPYMKXkKLnBFdmhvYCcU=";
   };
 
-  appimageContents = appimageTools.extractType2 {
-    inherit pname version src;
-  };
+  appimageContents = appimageTools.extractType2 { inherit pname version src; };
 
   dontUnpack = true;
   dontConfigure = true;

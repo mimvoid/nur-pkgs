@@ -1,6 +1,7 @@
-{ lib,
+{
+  lib,
   buildGoModule,
-  fetchFromGitHub
+  fetchFromGitHub,
 }:
 
 # Taken from nur.repos.milahu.cortile
@@ -28,7 +29,8 @@ buildGoModule rec {
   ];
 
   meta = with lib; {
-    description = ''Linux auto tiling manager with hot corner support for
+    description = ''
+      Linux auto tiling manager with hot corner support for
       Openbox, Fluxbox, IceWM, Xfwm, KWin, Marco, Muffin, Mutter and other
       EWMH compliant window managers using the X11 window system. Therefore,
       this project provides dynamic tiling for XFCE, LXDE, LXQt, KDE and GNOME

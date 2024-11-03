@@ -1,4 +1,8 @@
-{ lib, stdenvNoCC, fetchFromGitHub }:
+{
+  lib,
+  stdenvNoCC,
+  fetchFromGitHub,
+}:
 
 stdenvNoCC.mkDerivation {
   pname = "limelight-font";
@@ -15,7 +19,7 @@ stdenvNoCC.mkDerivation {
   installPhase = ''
     runHook preInstall
 
-    install -Dm444 -t $out/share/fonts/truetype ofl/limelight/*.ttf 
+    install -Dm444 -t $out/share/fonts/truetype ofl/limelight/*.ttf
 
     runHook postInstall
   '';
