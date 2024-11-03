@@ -15,7 +15,7 @@
   modules = import ./modules;
   overlays = import ./overlays;
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
+  leggie = pkgs.callPackage ./pkgs/fonts/leggie {  };
+  limelight = pkgs.callPackage ./pkgs/fonts/limelight {  };
+  ma-shan-zheng = pkgs.callPackage ./pkgs/fonts/ma-shan-zheng {  };
 }
