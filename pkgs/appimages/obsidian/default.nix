@@ -53,7 +53,7 @@ stdenvNoCC.mkDerivation rec {
     license = lib.licenses.free;
 
     platforms = lib.platforms.linux;
-    maintainers = with lib.maintainers; [ mimvoid ];
+    # maintainers = with lib.maintainers; [ mimvoid ];
     mainProgram = "obsidian";
   };
 }

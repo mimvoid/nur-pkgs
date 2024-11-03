@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/dedukun/bookmarks.yazi";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = with lib.maintainers; [ mimvoid ];
+    # maintainers = with lib.maintainers; [ mimvoid ];
   };
 }

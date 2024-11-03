@@ -37,7 +37,7 @@ buildGoModule rec {
       (Mate, Deepin, Cinnamon, Budgie) based desktop environments'';
     homepage = "https://github.com/leukipp/cortile";
     license = licenses.mit;
-    maintainers = with maintainers; [ ];
+    # maintainers = with maintainers; [ ];
     mainProgram = "cortile";
   };
 }

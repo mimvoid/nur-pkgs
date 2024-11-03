@@ -29,6 +29,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/Sonico98/exifaudio.yazi";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = with lib.maintainers; [ mimvoid ];
+    # maintainers = with lib.maintainers; [ mimvoid ];
   };
 }

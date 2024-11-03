@@ -30,6 +30,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/yazi-rs/plugins";
     license = lib.licenses.mit;
     platforms = lib.platforms.linux;
-    maintainers = with lib.maintainers; [ mimvoid ];
+    # maintainers = with lib.maintainers; [ mimvoid ];
   };
 }

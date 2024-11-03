@@ -40,6 +40,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme";
     license = licenses.gpl3Only;
     platforms = platforms.linux;
-    maintainers = with maintainers; [ ];
+    # maintainers = with maintainers; [ ];
   };
 }

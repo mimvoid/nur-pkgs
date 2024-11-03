@@ -67,6 +67,6 @@ stdenvNoCC.mkDerivation rec {
       free
     ];
     platforms = lib.platforms.unix;
-    maintainers = with lib.maintainers; [ mimvoid ];
+    # maintainers = with lib.maintainers; [ mimvoid ];
   };
 }

@@ -55,7 +55,7 @@ stdenv.mkDerivation rec {
     homepage = "https://super-productivity.com";
     license = licenses.mit;
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ offline ];
+    # maintainers = with maintainers; [ offline ];
     mainProgram = "super-productivity";
   };
 }
