@@ -1,7 +1,16 @@
 {
   description = "My personal NUR repository";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs = {
+    # You can change this with
+    # ```
+    # mimvoid = {
+    #   url = "github:mimvoid/nur-pkgs"
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # ```
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  };
 
   outputs = { self, nixpkgs }:
     let
